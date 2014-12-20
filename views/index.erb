@@ -1,14 +1,57 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Welcome To LifeCycle</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+
+    <!--Top Bar --> 
+    <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1 style="font-size:25px"><a href="index.erb">LifeCycle</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <!-- <li class="active"><a href="#">Right Button Active</a></li> --> 
+      <li class="has-dropdown" style="font-size:25">
+        <a href="#">Material</a>
+        <ul class="dropdown">
+          <li><a href="#">Plastic</a></li>
+          <li><a href="#">Cardboard</a></li>
+          <li><a href="#">Paper</a></li>
+          <li><a href="#">Glass</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Left Nav Section
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>-->
+  </section>
+</nav>
+
+    <!--Title Plus Button Group -->
+    <div align = "center" style="color:green;font-size:100px">
+      LifeCycle
+      <!-- Plastic, Cardboard, Paper, Glass -->
+    <ul class="button-group">
+      <li><a href="#" class="button">Plastic</a></li>
+      <li><a href="#" class="button">Cardboard</a></li>
+      <li><a href="#" class="button">Paper</a></li>
+      <li><a href="#" class="button">Glass</a></li>
+    </ul>
+    </div>
+
+    <!--Javascript-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
@@ -16,3 +59,5 @@
     </script>
   </body>
 </html>
+
+
