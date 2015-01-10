@@ -3,7 +3,8 @@ require 'bundler'
 
 Bundler.require
 
-require_relative ''
+# require_relative ''
+
 class MyApp < Sinatra::Base
 get '/' do
     erb :index
