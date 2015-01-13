@@ -15,7 +15,19 @@ post '/plastic' do
 end
 
 post '/cardboard' do
-  @plastic_results = Pinterest.new(params[:cardboard])
+  @cardboard_results = Pinterest.new(params[:cardboard])
   erb :cardboard_item
 end
+
+post '/glass' do
+  @glass_results = Pinterest.new(params[:glass])
+  erb :glass_item
+end
+
+post '/paper' do
+  @paper_results = Pinterest.new(params[:paper])
+  erb :paper_item
+end
+
+
 end

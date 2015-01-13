@@ -21,7 +21,7 @@ class Pinterest
   end
 
   def scrape_image
-    #scrape the image
+    
   end
 end
   
