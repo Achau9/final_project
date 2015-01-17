@@ -60,12 +60,6 @@
         </form>
       </li>
       <li>
-        <form action="/paper" method="post">
-          <input type="hidden" name="paper" value="paper">
-          <input type="submit" value="Paper" class="button">
-        </form>
-      </li>
-      <li>
         <form action="/glass" method="post">
           <input type="hidden" name="glass" value="glass">
           <input type="submit" value="Glass" class="button">
@@ -73,3 +67,6 @@
       </li>
     </ul>
     </div>
+    <%= @cardboard_results.url.first %>
+  </body>
+  </html>

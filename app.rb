@@ -24,10 +24,4 @@ post '/glass' do
   erb :glass_item
 end
 
-post '/paper' do
-  @paper_results = Pinterest.new(params[:paper])
-  erb :paper_item
-end
-
-
 end
