@@ -1,4 +1,3 @@
-
 require "open-uri"
 
 class Pinterest 
@@ -7,7 +6,7 @@ class Pinterest
 
   def initialize(search_query)
     html = open("https://www.pinterest.com/search/?q=#{search_query}")
-    @material = Nokogiri::HTML(html)
+    @cardboard = Nokogiri::HTML(html)
     scrape_url
     scrape_image
 
@@ -15,20 +14,15 @@ class Pinterest
 
   def scrape_url
     @url = []
-    suggestion = @material.css(".pinHolder").each do |pin|
-    @url << "https://www.pinterest.com"+pin.children[1].first[1]
+    suggestion = @cardboard.css(".pinHolder").each do |pin|
+      @url << "https://www.pinterest.com"+pin.children[1].first[1]
     end
   end
 
   def scrape_image
-<<<<<<< HEAD
-
-=======
     @image = []
     pic =  material.css(".pinHolder").each do |pin|
     @image << pin.children.children.children.children.children[1].first[1]
->>>>>>> 00a5eee58ed54e53c819a348747e534d2736d12d
   end
 end
-
-
+  
