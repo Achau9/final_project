@@ -26,5 +26,10 @@ class Pinterest
     end
   end
 end
- james = Pinterest.new("plastic")
+
+ james = Pinterest.new("glass")
  puts james.image
+
+alston = Pinterest.new("glass")
+puts alston.url
+
