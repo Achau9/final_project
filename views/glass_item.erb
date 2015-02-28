@@ -70,22 +70,19 @@
     <div align="center">
       <table>
         <tr>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/565835140656198811/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/70/b5/8e/70b58e57ce4c2ec846df86c12171866f.jpg"> </td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/171207223304818326/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/cf/22/d5/cf22d53074bcc578490d55226e62b0c9.jpg "></td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/295267319291404532/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/c7/56/f7/c756f731bbadcf89777f8528f3f21011.jpg"></td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/49750770857430772/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/f0/bf/57/f0bf577024a2b4df70e6a15d2d37134f.jpg"></td>
-        </tr>
-        <tr>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/233413193162898317/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/07/02/0c/07020ce61f25385a1f99946f3641e9ca.jpg
-"> </td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/415808978070226515/"><img src ="https://s-media-cache-ak0.pinimg.com/236x/da/be/53/dabe53601cfd8fbd882c5024bb0dde2d.jpg
-"> </td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/256916353717616417/
-"><img src ="https://s-media-cache-ak0.pinimg.com/236x/0f/99/55/0f9955a1f49e258adc629082f0878398.jpg
-" style="width:250px;height:350px"> </td>
-          <td colspan="100"><a href="https://www.pinterest.com/pin/378232068678564661/
-"><img src ="https://s-media-cache-ak0.pinimg.com/236x/6b/b7/04/6bb704b38f0ebd89bd405efe0fd96081.jpg
-"> </td>
+          <td colspan="100"><a href="<%= @glass_results.url.first %>"> <img src="<%= @glass_results.image.first %>" > </td>
+
+          <td colspan="100"><a href="<%= @glass_results.url[1] %>"><img src="<%= @glass_results.image[1] %>" ></td>
+          <td colspan="100"><a href="<%= @glass_results.url[2] %>"><img src="<%= @glass_results.image[2] %>" ></td>
+          <td colspan="100"><a href="<%= @glass_results.url[3] %>"><img src="<%= @glass_results.image[3] %>" ></td>
+          </tr>
+          <tr>
+          <td colspan="100"><a href="<%= @glass_results.url[9] %>"><img src="<%= @glass_results.image[9] %>" ></td>
+          <td colspan="100"><a href="<%= @glass_results.url[5] %>"><img src="<%= @glass_results.image[5] %>" ></td>
+          <td colspan="100"><a href="<%= @glass_results.url[6] %>"><img src="<%= @glass_results.image[6] %>" ></td>
+          <td colspan="100"><a href="<%= @glass_results.url[7] %>"><img src="<%= @glass_results.image[7] %>" ></td>
+          <tr>
+          
         </tr>
     </table>
     </div>
