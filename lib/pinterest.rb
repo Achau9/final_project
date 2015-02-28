@@ -28,8 +28,9 @@ class Pinterest
 end
 
  james = Pinterest.new("glass")
- puts james.image
-
-alston = Pinterest.new("glass")
-puts alston.url
+ puts @image
+ # puts james.image
+ # puts james.url
+# alston = Pinterest.new("glass")
+# puts alston.url
 
