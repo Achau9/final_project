@@ -8,7 +8,7 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <!--Top Bar --> 
+    <!--Top Bar -->
     <nav class="top-bar" data-topbar role="navigation">
    <ul class="title-area">
     <li class="name">
@@ -20,21 +20,7 @@
    <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <!-- <li class="active"><a href="#">Right Button Active</a></li> --> 
-      <!-- <li class="has-dropdown" style="font-size:25">
-        <a href="#">Material</a>
-        <ul class="dropdown">
-          <li><a href="#">Plastic</a></li>
-          <li><a href="#">Cardboard</a></li>
-          <li><a href="#">Paper</a></li>
-          <li><a href="#">Glass</a></li>
-        </ul>
-      </li> -->
     </ul>
-     <!-- Left Nav Section
-     <ul class="left">
-        <li><a href="#">Left Nav Button</a></li>
-     </ul>-->
     </section>
     </nav>
     <br>
@@ -72,20 +58,18 @@
         <p><%= url%><p>
       <% end %>
       <% @cardboard_results.image.each do |image|%>
-        <img src=<%= image%>>  
+        <img src=<%= image%>>
       <% end %> -->
       <div align="center">
       <table>
         <tr>
-       
           <td colspan="100"><a href="<%= @cardboard_results.url.first %>"> <img src="<%= @cardboard_results.image.first %>" > </td>
 
-          <td colspan="100"><a href="<%= @cardboard_results.url[1] %>"><img src="<%= @cardboard_results.image[1] %>" ></td> 
+          <td colspan="100"><a href="<%= @cardboard_results.url[1] %>"><img src="<%= @cardboard_results.image[1] %>" ></td>
 
           <td colspan="100"><a href="<%= @cardboard_results.url[2] %>"><img src="<%= @cardboard_results.image[2] %>" ></td>
 
           <td colspan="100"><a href="<%= @cardboard_results.url[10] %>"><img src="<%= @cardboard_results.image[10] %>" ></td>
-
         </tr>
         <tr>
          <td colspan="100"><a href="<%= @cardboard_results.url[8] %>"><img src="<%= @cardboard_results.image[8] %>" ></td>
@@ -99,7 +83,7 @@
     </table>
     </div>
     </div>
-    
+
 
   </body>
   </html>

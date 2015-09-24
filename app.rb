@@ -6,7 +6,7 @@ require_relative 'lib/pinterest.rb'
 
 class MyApp < Sinatra::Base
 get '/' do
-    erb :index
+    erb :indexq
 end
 
 post '/plastic' do
